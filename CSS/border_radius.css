@@ -1,0 +1,232 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    background: aliceblue;
+}
+#header{
+    height: 120px; 
+    width: 100%;
+    padding: 20px;
+}
+.topic h1{
+    color: #0086f3;
+}
+.property-links .links{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+}
+.property-links .links li{
+    padding:20px 20px 0px 0px;
+}
+.property-links .links li a{
+    color:#000000;
+    font-weight: 550;
+    font-size: 17px;
+}
+.property-links .links li::after{
+    content: ' ';
+    width:0%;
+    height: 2px;
+    background: #0086f3;
+    margin: auto;
+    display: block;
+    transition: 0.5s;
+}
+.property-links .links li:hover::after{
+    width: 100%;
+}
+#border{
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 240px;
+    width: 90%;
+    height: 500px;
+    margin: auto;
+}
+.form-group{
+    height: 50px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px;
+    gap: 10px;
+    margin: 10px 0px;
+    align-items: flex-end; /* Align items to the end */
+}
+input[type="color"] {
+    height: 40px;
+    width: 100px;
+    padding: 3px 5px;
+    align-self: flex-end; /* Align self to the end */
+}
+input[type="range"] {
+    height: 20px;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    margin: auto;
+    background: transparent;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 30px;
+    background: #ddd;
+    border: none;
+    border-radius: 5px;
+}
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 30px;
+    background: #0086f3;
+    cursor: pointer;
+    border-radius: 5px;
+}
+label {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form-group label span {
+    margin-left: 10px;
+}
+#options{
+    padding: 6px 0px;
+    background: #ddd;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin:-7px 0; 
+}
+
+
+.code-copy{
+    display: flex;
+    flex-direction: column;
+}
+#copy{
+    height: 100px;
+    width: 400px;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 40px;
+}
+.btn{
+    padding: 10px 0px;
+    cursor: pointer;
+    background:#0086f3;
+    color: #ffffff;
+    font-size: 12px;
+    border: none;
+    font-size: 16px;
+    font-weight: 550;
+    outline: none;
+    transition: 0.5s;
+    width: 400px;
+}
+.btn:hover{
+    background: #025192;
+}
+.container-output-box{
+    margin-top: 60px;
+    width: 400px;
+    height:400px;background:transparent;
+    border: 1px solid #000000;
+}
+
+/* Medium devices (tablets and small laptops, max-width: 1023px) */
+@media (max-width: 1023px) {
+    .property-links .links li a {
+        font-size: 14px;
+    }
+    .property-links {
+        width: 100%;
+    }
+    .container {
+        flex-direction: row;
+        width: 90%;
+        gap: 40px;
+        min-height: 150vh;
+    }
+    .container-output-box {
+        width: 400px;
+        height: 400px;
+        background: #0086f3;
+        margin-top: 100px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, max-width: 767px) */
+@media (max-width: 767px) {
+    *{
+        width: auto;
+    }
+    .property-links {
+        width: 80%;
+    }
+    .property-links .links {
+        flex-wrap: wrap;
+    }
+    .property-links .links li {
+        padding: 10px 20px 0px 0px;
+    }
+    .property-links .links li a {
+        font-size: 15px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 95%;
+        min-height:210vh;
+        margin: auto;
+    }
+    .container-box h1 {
+        background-color: #0086f3;
+        color: #ffffff;
+        padding: 10px;
+        text-align: center;
+    }
+    .container-box h1:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .form-group {
+        height: 50px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0px;
+        gap: 10px;
+        margin: 10px 0px;
+    }
+    .container-output-box {
+        width: 400px;
+        height: 400px;
+        background: #0086f3;
+        margin-top: 0px;
+    }
+}
+
+/* Extra small devices (phones, max-width: 599px) */
+@media (max-width: 599px) { 
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        min-height: 220vh;
+    }
+}

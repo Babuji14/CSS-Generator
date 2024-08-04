@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Columns</title>
+    <link rel="stylesheet" href="/HTML/column.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="topic">
+            <h1>Multiple Columns CSS</h1>
+        </div>
+        <div class="property-links">
+            <ul class="links">
+                <li><a href="/HTML/home.html">Home</a></li>
+                <li><a href="/HTML/box_shadow.html">Box Shadow</a></li>
+                <li><a href="/HTML/transfrom.html">Transform</a></li>
+                <li><a href="/HTML/border.html">Border</a></li>
+                <li><a href="/HTML/border_radius.html">Border-radius</a></li>
+                <li><a href="/HTML/column.html">Multiple Columns</a></li>
+                <li><a href="/HTML/textshadow.html">Text Shadow</a></li>
+                <li><a href="/HTML/filter.html">Filter</a></li>
+            </ul>
+        </div>
+    </header>
+    <section id="box_shadow">
+        <div class="container" id="container">
+            <div class="container-box">
+                <form>
+                    <div class="form-group">
+                        <label for="column_count">Column Counts<span id="count_span">0px</span></label>
+                        <input type="range" id="column_count" value="0" min="1" max="5" step="1">
+                    </div>
+                    <div class="form-group">
+                        <label for="column_gap">Column Gap<span id="gap_span">0px</span></label>
+                        <input type="range" id="column_gap" value="0" min="1" max="50">
+                    </div>
+                    <div class="form-group">
+                        <label for="options">Column Rule Style</label>
+                        <select id="options">
+                            <option value="none">None</option>
+                            <option value="solid">Solid</option>
+                            <option value="double">Double</option>
+                            <option value="dashed">Dashed</option>
+                            <option value="dotted">Dotted</option>
+                            <option value="groove">Groove</option>
+                            <option value="ridge">Ridge</option>
+                            <option value="inset">Inset</option>
+                            <option value="outset">Outset</option>
+                            <option value="hidden">Hidden</option>
+                        </select>
+                    </div>                   
+                    <div class="form-group">
+                        <label for="column_width">Column Rule Width<span id="width_span">0px</span></label>
+                        <input type="range" id="column_width" value="0" min="0" max="50" step="1">
+                    </div>
+                    <div class="form-group">
+                        <label for="color">Column Rule color</label>
+                        <input type="color" id="color" value="#000000">
+                    </div> 
+                </form>
+                <div class="code-copy">
+                    <textarea id="copy" readonly></textarea>
+                    <button class="btn">Copy</button>
+                </div>
+            </div>
+            <div class="container-output" id="container-output">
+                <div class="container-output-box">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium odio ducimus est facilis facere esse possimus. Earum soluta illo consectetur ipsa voluptas, molestiae saepe nemo molestias magnam nisi culpa itaque dolore corrupti nihil similique enim excepturi officiis ullam labore eos adipisci deleniti ipsam! Ducimus, aut quia pariatur, quam dignissimos ea voluptatum natus obcaecati quaerat corporis tempora iste officia perspiciatis, reiciendis aliquam doloremque repudiandae eaque repellendus a odit id ipsam consequatur. Odit accusamus perspiciatis qui, corrupti corporis quod quo! Illo sint, velit officia sit minima suscipit molestiae? Nulla nobis est natus suscipit voluptas quis dolorem consequuntur id, perferendis harum eos voluptate necessitatibus aliquid sunt quidem voluptates ducimus voluptatibus, eveniet, eaque architecto assumenda ut rerum? Ducimus cupiditate officiis praesentium officia veniam quidem maiores, fugit fugiat consequatur beatae consequuntur exercitationem dolores modi ullam eaque hic, nihil vel dignissimos aliquam? Nisi incidunt quo, recusandae dolore veniam, dignissimos illum nihil vitae mollitia dolorum aspernatur alias rem dolor unde non et repellendus impedit nostrum reprehenderit amet! Ipsam sequi accusantium consectetur quod omnis officia veniam odio sed cumque. Cupiditate accusantium architecto alias, ea vitae impedit aliquid, rem inventore soluta possimus hic, tempora magni voluptate modi nesciunt veniam doloribus perferendis. A, inventore maiores? Saepe ab illo assumenda totam fugit, dolorum quasi beatae neque voluptatum vel inventore tenetur obcaecati aperiam officia porro mollitia rerum omnis atque quo! Illo officia molestias aliquam vero eos ipsam consectetur vitae recusandae ad, qui deserunt magni nobis reprehenderit, cumque explicabo fuga quod corrupti minus deleniti sint facilis cum error itaque quas! Impedit sequi cupiditate odio quos voluptas, vero praesentium architecto harum sint officiis facere consequatur, vitae nulla quam nisi explicabo fugit quisquam. Suscipit exercitationem nobis earum modi tempore illum vel doloribus voluptates iure, magni saepe sapiente et reprehenderit soluta architecto hic ratione aspernatur rem similique? Sed ullam laborum, enim officiis repellendus rem blanditiis, dolor omnis dolorem, consequuntur reiciendis quam vero at corporis tempore iste dignissimos. Eaque similique obcaecati culpa commodi quibusdam perspiciatis beatae laboriosam recusandae. Autem illum vel quidem repudiandae ex iste voluptatum aliquam, laudantium quibusdam hic incidunt culpa a accusantium consequuntur est illo obcaecati excepturi natus fuga accusamus nobis quasi nihil reprehenderit? Eligendi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, maxime?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="/JS/column.js"></script>
+</html>

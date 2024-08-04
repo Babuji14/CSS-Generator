@@ -1,0 +1,113 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    background: aliceblue;
+}
+#header {
+    height: 120px; 
+    width: 100%;
+    padding: 30px;
+}
+.topic h1 {
+    color: #0086f3;
+    margin-top: 60px;
+}
+#property {
+    margin-top: 50px;
+}
+.property-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.ul-links {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+}
+
+.ul-links li {
+    flex: 2 2 calc(30% - 20px);
+    margin: 10px;
+}
+
+.ul-links li a {
+    display: block;
+    background-color: #506a88;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.ul-links li a:hover {
+    background-color: #5481b4;
+}
+
+
+/*Media Query */
+/* Large devices (laptops and desktops, max-width: 1439px) */
+@media (max-width: 1439px) {
+    .ul-links li a {
+        font-size: 1.2em;
+    }
+}
+
+/* Medium devices (tablets and small laptops, max-width: 1023px) */
+@media (max-width: 1023px){
+    .ul-links {
+        padding: 0px 20px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, max-width: 767px) */
+@media (max-width: 767px) {
+
+}
+
+
+/* Extra small devices (phones, max-width: 599px) */
+@media (max-width: 599px) { 
+   
+    .topic h1 {
+        color: #0086f3;
+        margin-top: 60px;
+    }
+    #property {
+        margin-top: 50px;
+    }
+    .property-links {
+        display: flex;
+        flex-direction: column;
+    }
+    .ul-links li a {
+        display: block;
+        background-color: #506a88;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        transition: background-color 0.3s ease;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    
+    .ul-links li a:hover {
+        background-color: #5481b4;
+    }
+}

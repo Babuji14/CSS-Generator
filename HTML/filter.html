@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+    <link rel="stylesheet" href="/CSS/filter.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="topic">
+            <h1>Filter CSS</h1>
+        </div>
+        <div class="property-links">
+            <ul class="links">
+                <li><a href="/HTML/home.html">Home</a></li>
+                <li><a href="/HTML/box_shadow.html">Box Shadow</a></li>
+                <li><a href="/HTML/transfrom.html">Transform</a></li>
+                <li><a href="/HTML/border.html">Border</a></li>
+                <li><a href="/HTML/border_radius.html">Border-radius</a></li>
+                <li><a href="/HTML/column.html">Multiple Columns</a></li>
+                <li><a href="/HTML/textshadow.html">Text Shadow</a></li>
+                <li><a href="/HTML/filter.html">Filter</a></li>
+            </ul>
+        </div>
+    </header>
+    <section id="filter">
+        <div class="container" id="container">
+            <div class="container-box">
+                <form>
+                    <div class="form-group">
+                        <label for="grayscale">Grayscale <span id="grayscale_span">0%</span></label>
+                        <input type="range" id="grayscale" value="0" min="0" max="100">
+                    </div>
+                    <div class="form-group">
+                        <label for="sepia">Sepia <span id="sepia_span">0%</span></label>
+                        <input type="range" id="sepia" value="0" min="0" max="100">
+                    </div>
+                    <div class="form-group">
+                        <label for="blur">Blur <span id="blur_span">0px</span></label>
+                        <input type="range" id="blur" value="0" min="0" max="10">
+                    </div>
+                    <div class="form-group">
+                        <label for="brightness">Brightness <span id="brightness_span">100%</span></label>
+                        <input type="range" id="brightness" value="100" min="0" max="200">
+                    </div>
+                    <div class="form-group">
+                        <label for="hue_rotate">Hue Rotate <span id="hue_rotate_span">0°</span></label>
+                        <input type="range" id="hue_rotate" value="0" min="0" max="360">
+                    </div>
+                    <div class="form-group">
+                        <label for="saturate">Saturate <span id="saturate_span">100%</span></label>
+                        <input type="range" id="saturate" value="100" min="0" max="1000">
+                    </div>
+                    <div class="form-group">
+                        <label for="opacity">Opacity <span id="opacity_span">100%</span></label>
+                        <input type="range" id="opacity" value="100" min="0" max="100">
+                    </div>
+                    <div class="form-group">
+                        <label for="contrast">Contrast <span id="contrast_span">100%</span></label>
+                        <input type="range" id="contrast" value="100" min="0" max="1000">
+                    </div>
+                    <div class="form-group">
+                        <label for="invert">Invert <span id="invert_span">0%</span></label>
+                        <input type="range" id="invert" value="0" min="0" max="100">
+                    </div>
+                </form>
+                <div class="code-copy">
+                    <textarea id="copy" readonly></textarea>
+                    <button class="btn">Copy</button>
+                </div>
+            </div>
+            <div class="container-output" id="container-output">
+                <div class="container-output-box">
+                    <img src="filter.jpeg" alt="filter.png" width="500px" height="500px">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="/JS/filter.js"></script>
+</html>

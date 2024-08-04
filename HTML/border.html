@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border</title>
+    <link rel="stylesheet" href="/HTML/border.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="topic">
+            <h1>Border CSS</h1>
+        </div>
+        <div class="property-links">
+            <ul class="links">
+                <li><a href="/HTML/home.html">Home</a></li>
+                <li><a href="/HTML/box_shadow.html">Box Shadow</a></li>
+                <li><a href="/HTML/transfrom.html">Transform</a></li>
+                <li><a href="/HTML/border.html">Border</a></li>
+                <li><a href="/HTML/border_radius.html">Border-radius</a></li>
+                <li><a href="/HTML/column.html">Multiple Columns</a></li>
+                <li><a href="/HTML/textshadow.html">Text Shadow</a></li>
+                <li><a href="/HTML/filter.html">Filter</a></li>
+            </ul>
+        </div>
+    </header>
+    <section id="border">
+        <div class="container" id="container">
+            <div class="container-box">
+                <form>
+                    <div class="form-group">
+                        <label for="border_size">Border Size <span id="border_span"> 0px </span></label>
+                        <input id="border_size" type="range" value="0" max="20">
+                    </div>                    
+                    <div class="form-group">
+                        <label for="options"> Border Style</label>
+                        <select id="options">
+                            <option value="none">None</option>
+                            <option value="solid">Solid</option>
+                            <option value="double">Double</option>
+                            <option value="dashed">Dashed</option>
+                            <option value="dotted">Dotted</option>
+                            <option value="groove">Groove</option>
+                            <option value="ridge">Ridge</option>
+                            <option value="inset">Inset</option>
+                            <option value="outset">Outset</option>
+                            <option value="hidden">Hidden</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="color"> Border color</label>
+                        <input type="color" id="color" value="#000000">
+                    </div>
+                    <div class="form-group">
+                        <label for="bgcolor"> Background color</label>
+                        <input type="color" id="bgcolor" value="#ffffff">
+                    </div>
+                </form>
+                <div class="code-copy">
+                    <textarea id="copy" readonly></textarea>
+                    <button class="btn">Copy</button>
+                </div>
+            </div>
+            <div class="container-output" id="container-output">
+                <div class="container-output-box"></div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="/JS/border.js"></script>
+</html>

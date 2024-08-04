@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Radius</title>
+    <link rel="stylesheet" href="/CSS/border_radius.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="topic">
+            <h1>Border-Radius CSS</h1>
+        </div>
+        <div class="property-links">
+            <ul class="links">
+                <li><a href="/HTML/home.html">Home</a></li>
+                <li><a href="/HTML/box_shadow.html">Box Shadow</a></li>
+                <li><a href="/HTML/transfrom.html">Transform</a></li>
+                <li><a href="/HTML/border.html">Border</a></li>
+                <li><a href="/HTML/border_radius.html">Border-radius</a></li>
+                <li><a href="/HTML/column.html">Multiple Columns</a></li>
+                <li><a href="/HTML/textshadow.html">Text Shadow</a></li>
+                <li><a href="/HTML/filter.html">Filter</a></li>
+            </ul>
+        </div>
+    </header>
+    <section id="border-radius">
+        <div class="container" id="container">
+            <div class="container-box">
+                <form>
+                    <div class="form-group">
+                        <label for="border_all">All Corner Radius<span id="border_all_span"> 0px </span></label>
+                        <input id="border_all" type="range" value="0" min="0" max="400">
+                    </div>
+                    <div class="form-group">
+                        <label for="tlr">Top Left Radius<span id="tlr_span"> 0px </span></label>
+                        <input id="tlr" type="range" value="0" min="0" max="400">
+                    </div>
+                    <div class="form-group">
+                        <label for="trr">Top Right Radius<span id="trr_span"> 0px </span></label>
+                        <input id="trr" type="range" value="0" min="0" max="400">
+                    </div>
+                    <div class="form-group">
+                        <label for="blr">Bottom Left Radius<span id="blr_span"> 0px </span></label>
+                        <input id="blr" type="range" value="0" min="0" max="400">
+                    </div>
+                    <div class="form-group">
+                        <label for="brr">Bottom Right Radius<span id="brr_span"> 0px </span></label>
+                        <input id="brr" type="range" value="0" min="0" max="400">
+                    </div>
+                    <div class="form-group">
+                        <label for="bw">Border Width <span id="bw_span"> 0px </span></label>
+                        <input id="bw" type="range" value="0" min="0" max="400">
+                    </div>
+                    <div class="form-group">
+                        <label for="color"> Border color</label>
+                        <input type="color" id="color" value="#000000">
+                    </div>
+                    <div class="form-group">
+                        <label for="bgcolor"> Background color</label>
+                        <input type="color" id="bgcolor" value="#0086f3">
+                    </div>
+                    <div class="form-group">
+                        <label for="options"> Border Style</label>
+                        <select id="options">
+                            <option value="none">None</option>
+                            <option value="solid">Solid</option>
+                            <option value="double">Double</option>
+                            <option value="dashed">Dashed</option>
+                            <option value="dotted">Dotted</option>
+                            <option value="groove">Groove</option>
+                            <option value="ridge">Ridge</option>
+                            <option value="inset">Inset</option>
+                            <option value="outset">Outset</option>
+                            <option value="hidden">Hidden</option>
+                        </select>
+                    </div>
+                </form>
+                <div class="code-copy">
+                    <textarea id="copy" readonly></textarea>
+                    <button class="btn">Copy</button>
+                </div>
+            </div>
+            <div class="container-output" id="container-output">
+                <div class="container-output-box">
+
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="/JS/border_radius.js"></script>
+</html>
